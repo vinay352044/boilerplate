@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dark {
+  height: 100vh;
+  background-color: #46045e; 
+  color: #ffffff; 
+}
+
+.light {
+  background-color: #f3ebf6; 
+  color: #000000; 
+}

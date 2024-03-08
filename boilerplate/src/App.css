@@ -1,0 +1,9 @@
+.dark {
+  background-color: #46045e; /* Dark background color */
+  color: #ffffff; /* Text color for dark theme */
+}
+
+.light {
+  background-color: #f3ebf6; /* Light background color */
+  color: #000000; /* Text color for light theme */
+}
