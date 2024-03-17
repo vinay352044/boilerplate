@@ -39,7 +39,7 @@ function App() {
       <Route path='/' element={<Dashboard/>}></Route>
       <Route path='/login' element={<Login/>}></Route>
       {/* <Route path='/premium' 
-      element={isAuthenticated ? <Premium/> : <Login/>}
+      element={isAuthenticated ? <Premium/> : <Login/>}+
       ></Route> */}  
       {/* issue with this approach : kitne pages me lagaoge :) */}
       <Route path='/premium' element={
@@ -66,3 +66,5 @@ function App() {
 }
 
 export default App
+
+
