@@ -6,7 +6,9 @@ const Layout = () => {
   return (
     <>
     <Navbar />   {/* This is where child routes will render*/}
+    <div className='min-h-[85vh]'>
     <Outlet/> 
+    </div>
     <Footer/>
     </>
   )

@@ -11,14 +11,14 @@ const CommonLinks = ({ children, handleLogOut }) => {
       <ul className="font-medium text-base flex flex-col items-center gap-4 md:p-0 md:flex-row">
         <li>
           <NavLink
-            to={admin ? "/admin": "/"} // seller to change
+            to={admin ? "/admin": "/"} 
             className={({ isActive }) =>
               `${
                 isActive ? "" : "text-white"
               } text-lg block py-1 hover:text-black`
             }
           >
-            home
+            
           </NavLink>
         </li>
         {

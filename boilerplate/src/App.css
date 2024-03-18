@@ -1,9 +1,7 @@
-.dark {
-  background-color: #46045e; /* Dark background color */
-  color: #ffffff; /* Text color for dark theme */
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.light {
-  background-color: #f3ebf6; /* Light background color */
-  color: #000000; /* Text color for light theme */
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
