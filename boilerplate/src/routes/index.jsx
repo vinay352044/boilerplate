@@ -12,7 +12,7 @@ const Contact = React.lazy(()=> import("../components/Pages/Contact"))
 const About = React.lazy(()=> import("../components/Pages/About"))
 const Cart = React.lazy(()=> import("../components/Pages/Cart"))
 const Admin = React.lazy(()=> import("../components/Pages/Admin"))
-const Whishlist = React.lazy(()=> import("../components/Pages/Whishlist"))
+const Wishlist = React.lazy(()=> import("../components/Pages/Whishlist"))
 const Profile = React.lazy(()=> import("../components/Pages/Profile"))
 export const Router = () => {
     const role = useSelector((state)=>state.role)
@@ -35,8 +35,8 @@ export const Router = () => {
                     ),
                     children:[
                         {
-                            path:'whishlist',
-                            element:<Whishlist/>
+                            path:'wishlist',
+                            element:<Wishlist/>
                         },
                         {
                             path:'profile',

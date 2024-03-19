@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const API = axios.create({
-    baseURL:'http://localhost:3000',
+    baseURL:'http://localhost:3006',
     timeout:5000,
 })
 export const registerUser = async(userObj) => {

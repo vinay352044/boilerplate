@@ -12,6 +12,7 @@ import CommonLinks from "./Links/CommonLinks";
 const Navbar = () => {
   const { user, admin } = useSelector((state) => state.role);
   console.log(user)  // coming here
+  console.log(admin)
   const [show, setShow] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate()
