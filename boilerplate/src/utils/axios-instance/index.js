@@ -21,6 +21,23 @@ export const registerUser = async(userObj) => {
         }
     }
 }
+export const getProducts = async () => {
+  try {
+   const res = await API.get("products")
+   return {
+    success:true,
+    data:res.data,
+    error:null
+   }
+  }
+  catch{
+    return{
+      success:false,
+      data:[],
+      error:error.message
+    }
+  }
+}
 export const getUsers = async () => {
     try {
       const res = await API.get("users");
