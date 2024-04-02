@@ -1,6 +1,6 @@
 import React from 'react'
 
-const index = () => {
+const Contact = () => {
   return (
     <div>
       contact
@@ -8,4 +8,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Contact

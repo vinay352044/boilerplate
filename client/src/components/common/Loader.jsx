@@ -11,8 +11,8 @@ const Loader = () => {
 				<Circles
 					height={100}
 					width={100}
-					radius={5}
-					color="#0296db"
+					radius={10}
+					color="#D88552"
 					ariaLabel="circles-loading"
 					visible={true}
 				/>

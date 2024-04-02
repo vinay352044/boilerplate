@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { loginSchema } from '../../../schemas';
+import { loginSchema } from '../../schemas';
 import { useDispatch, useSelector } from 'react-redux';
-import { getUsers } from '../../../utils/axios-instance';
-import { setRole } from '../../../redux/actions/roleAction';
+import { getUsers } from '../../utils/axios-instance';
+import { setRole } from '../../redux/actions/roleAction';
 import { useFormik } from 'formik';
 import { NavLink, useNavigate } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ const roleValues = {
   password: '',
 };
 
-const Index = () => {
+const LoginPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { isAuth } = useSelector((state) => state.role);
@@ -120,4 +120,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default LoginPage;

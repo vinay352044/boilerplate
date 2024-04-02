@@ -1,7 +1,7 @@
 import { useFormik } from 'formik';
 import { useEffect, useState } from 'react';
-import { getUsers, registerUser } from '../../../utils/axios-instance';
-import { userSchema } from '../../../schemas';
+import { getUsers, registerUser } from '../../utils/axios-instance';
+import { userSchema } from '../../schemas';
 import { useNavigate } from 'react-router-dom';
 const initialUserValues = {
   name: '',
@@ -10,7 +10,7 @@ const initialUserValues = {
   confirm_password: '',
 };
 
-function Index() {
+const Register = () => {
   const [users, setUsers] = useState([]);
   const navigate = useNavigate()
   useEffect(() => {
@@ -132,4 +132,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Register;

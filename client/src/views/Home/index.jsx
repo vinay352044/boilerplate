@@ -1,6 +1,6 @@
 import React from 'react'
 
-const index = () => {
+const Home = () => {
   return (
     <div className='text-red font-bold-500'>
       Home Page
@@ -8,4 +8,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Home

@@ -3,17 +3,17 @@ import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import PrivateRoutesUser from '../utils/private-routes/PrivateRoutesUser'
 import PrivateRoutesAdmin from '../utils/private-routes/PrivateRoutesAdmin'
-const ErrorPage = React.lazy(()=> import("../components/Pages/ErrorPage/ErrorPage"))
+const ErrorPage = React.lazy(()=> import("../views/ErrorPage"))
 const Layout = React.lazy(()=> import("../components/layout/Layout"))
-const Home = React.lazy(()=> import("../components/Pages/Home"))
-const Register = React.lazy(() => import("../components/Pages/Register"))
-const Login = React.lazy(()=> import("../components/Pages/Login"))
-const Contact = React.lazy(()=> import("../components/Pages/Contact"))
-const About = React.lazy(()=> import("../components/Pages/About"))
-const Cart = React.lazy(()=> import("../components/Pages/Cart"))
-const Admin = React.lazy(()=> import("../components/Pages/Admin"))
-const Wishlist = React.lazy(()=> import("../components/Pages/Whishlist"))
-const Profile = React.lazy(()=> import("../components/Pages/Profile"))
+const Home = React.lazy(()=> import("../views/Home"))
+const Register = React.lazy(() => import("../views/Register"))
+const Login = React.lazy(()=> import("../views/Login"))
+const Contact = React.lazy(()=> import("../views/Contact"))
+const About = React.lazy(()=> import("../views/About"))
+const Cart = React.lazy(()=> import("../views/Cart"))
+const Admin = React.lazy(()=> import("../views/Admin"))
+const Wishlist = React.lazy(()=> import("../views/Whishlist"))
+const Profile = React.lazy(()=> import("../views/Profile"))
 export const Router = () => {
     const role = useSelector((state)=>state.role)
     console.log(role.user)
